@@ -1,0 +1,6 @@
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\obj\Debug\EmployeeManagementServiceFixtures.csprojResolveAssemblyReference.cache
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
