@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementService", "EmployeeManagementService\EmployeeManagementService.csproj", "{41771664-9FCA-4593-8377-AB6A2763D250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementServiceFixtures", "UnitTestProject1\EmployeeManagementServiceFixtures.csproj", "{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSFixtures", "EMSFixtures\EMSFixtures.csproj", "{341BF614-226A-4C56-AA02-5CC6E2B795E5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{41771664-9FCA-4593-8377-AB6A2763D250} = {41771664-9FCA-4593-8377-AB6A2763D250}
 	EndProjectSection
@@ -18,10 +18,10 @@ Global
 		{41771664-9FCA-4593-8377-AB6A2763D250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41771664-9FCA-4593-8377-AB6A2763D250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41771664-9FCA-4593-8377-AB6A2763D250}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341BF614-226A-4C56-AA02-5CC6E2B795E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341BF614-226A-4C56-AA02-5CC6E2B795E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341BF614-226A-4C56-AA02-5CC6E2B795E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341BF614-226A-4C56-AA02-5CC6E2B795E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

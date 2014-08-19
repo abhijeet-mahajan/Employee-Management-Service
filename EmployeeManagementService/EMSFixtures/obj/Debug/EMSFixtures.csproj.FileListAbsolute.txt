@@ -1,0 +1,6 @@
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\obj\Debug\EMSFixtures.csprojResolveAssemblyReference.cache
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\bin\Debug\EMSFixtures.dll.config
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\bin\Debug\EMSFixtures.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\bin\Debug\EMSFixtures.pdb
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\obj\Debug\EMSFixtures.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EMSFixtures\obj\Debug\EMSFixtures.pdb

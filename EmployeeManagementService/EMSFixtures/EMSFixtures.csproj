@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C67A2EC2-F1BF-44B0-A7A2-F82D9487FE51}</ProjectGuid>
+    <ProjectGuid>{341BF614-226A-4C56-AA02-5CC6E2B795E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTestProject1</RootNamespace>
-    <AssemblyName>UnitTestProject1</AssemblyName>
+    <RootNamespace>EMSFixtures</RootNamespace>
+    <AssemblyName>EMSFixtures</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,47 +53,47 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Service References\ServiceReference\Reference.cs">
+    <Compile Include="EmployeeManagementServiceFixtures.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\EmployeeManagementServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="UnitTest1.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\ServiceReference\EmployeeManagementService.wsdl" />
-    <None Include="Service References\ServiceReference\EmployeeManagementService.xsd">
+    <None Include="Service References\EmployeeManagementServiceReference\EmployeeManagementService.wsdl" />
+    <None Include="Service References\EmployeeManagementServiceReference\EmployeeManagementService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference\EmployeeManagementService1.xsd">
+    <None Include="Service References\EmployeeManagementServiceReference\EmployeeManagementService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference\EmployeeManagementService2.xsd">
+    <None Include="Service References\EmployeeManagementServiceReference\EmployeeManagementService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference\UnitTestProject1.ServiceReference.EmployeeDetails.datasource">
+    <None Include="Service References\EmployeeManagementServiceReference\EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference\" />
+    <WCFMetadataStorage Include="Service References\EmployeeManagementServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference\EmployeeManagementService.disco" />
+    <None Include="Service References\EmployeeManagementServiceReference\EmployeeManagementService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\EmployeeManagementServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference\configuration.svcinfo" />
+    <None Include="Service References\EmployeeManagementServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference\Reference.svcmap">
+    <None Include="Service References\EmployeeManagementServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

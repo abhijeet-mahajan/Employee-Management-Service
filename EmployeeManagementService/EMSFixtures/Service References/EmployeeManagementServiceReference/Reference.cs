@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UnitTestProject1.ServiceReference {
+namespace EMSFixtures.EmployeeManagementServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -26,7 +26,7 @@ namespace UnitTestProject1.ServiceReference {
         private string EmailIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private UnitTestProject1.ServiceReference.Remark[] EmployeeRemarkField;
+        private EMSFixtures.EmployeeManagementServiceReference.Remark[] EmployeeRemarkField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string IdField;
@@ -58,7 +58,7 @@ namespace UnitTestProject1.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public UnitTestProject1.ServiceReference.Remark[] EmployeeRemark {
+        public EMSFixtures.EmployeeManagementServiceReference.Remark[] EmployeeRemark {
             get {
                 return this.EmployeeRemarkField;
             }
@@ -168,7 +168,7 @@ namespace UnitTestProject1.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.ICreateEmployeeDetails")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="EmployeeManagementServiceReference.ICreateEmployeeDetails")]
     public interface ICreateEmployeeDetails {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICreateEmployeeDetails/AddEmployeeDetails", ReplyAction="http://tempuri.org/ICreateEmployeeDetails/AddEmployeeDetailsResponse")]
@@ -191,12 +191,12 @@ namespace UnitTestProject1.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ICreateEmployeeDetailsChannel : UnitTestProject1.ServiceReference.ICreateEmployeeDetails, System.ServiceModel.IClientChannel {
+    public interface ICreateEmployeeDetailsChannel : EMSFixtures.EmployeeManagementServiceReference.ICreateEmployeeDetails, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CreateEmployeeDetailsClient : System.ServiceModel.ClientBase<UnitTestProject1.ServiceReference.ICreateEmployeeDetails>, UnitTestProject1.ServiceReference.ICreateEmployeeDetails {
+    public partial class CreateEmployeeDetailsClient : System.ServiceModel.ClientBase<EMSFixtures.EmployeeManagementServiceReference.ICreateEmployeeDetails>, EMSFixtures.EmployeeManagementServiceReference.ICreateEmployeeDetails {
         
         public CreateEmployeeDetailsClient() {
         }
@@ -243,35 +243,35 @@ namespace UnitTestProject1.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IRetrieveEmployeeDeatils")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="EmployeeManagementServiceReference.IRetrieveEmployeeDeatils")]
     public interface IRetrieveEmployeeDeatils {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetails", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsResponse")]
-        UnitTestProject1.ServiceReference.EmployeeDetails GetEmployeeDetails(string employeeId);
+        EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails GetEmployeeDetails(string employeeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetails", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsResponse")]
-        System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails> GetEmployeeDetailsAsync(string employeeId);
+        System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails> GetEmployeeDetailsAsync(string employeeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetAllEmployeeDetails", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetAllEmployeeDetailsResponse")]
-        UnitTestProject1.ServiceReference.EmployeeDetails[] GetAllEmployeeDetails();
+        EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[] GetAllEmployeeDetails();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetAllEmployeeDetails", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetAllEmployeeDetailsResponse")]
-        System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails[]> GetAllEmployeeDetailsAsync();
+        System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[]> GetAllEmployeeDetailsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsByName", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsByNameResponse")]
-        UnitTestProject1.ServiceReference.EmployeeDetails[] GetEmployeeDetailsByName(string name);
+        EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[] GetEmployeeDetailsByName(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsByName", ReplyAction="http://tempuri.org/IRetrieveEmployeeDeatils/GetEmployeeDetailsByNameResponse")]
-        System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails[]> GetEmployeeDetailsByNameAsync(string name);
+        System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[]> GetEmployeeDetailsByNameAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IRetrieveEmployeeDeatilsChannel : UnitTestProject1.ServiceReference.IRetrieveEmployeeDeatils, System.ServiceModel.IClientChannel {
+    public interface IRetrieveEmployeeDeatilsChannel : EMSFixtures.EmployeeManagementServiceReference.IRetrieveEmployeeDeatils, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RetrieveEmployeeDeatilsClient : System.ServiceModel.ClientBase<UnitTestProject1.ServiceReference.IRetrieveEmployeeDeatils>, UnitTestProject1.ServiceReference.IRetrieveEmployeeDeatils {
+    public partial class RetrieveEmployeeDeatilsClient : System.ServiceModel.ClientBase<EMSFixtures.EmployeeManagementServiceReference.IRetrieveEmployeeDeatils>, EMSFixtures.EmployeeManagementServiceReference.IRetrieveEmployeeDeatils {
         
         public RetrieveEmployeeDeatilsClient() {
         }
@@ -292,27 +292,27 @@ namespace UnitTestProject1.ServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public UnitTestProject1.ServiceReference.EmployeeDetails GetEmployeeDetails(string employeeId) {
+        public EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails GetEmployeeDetails(string employeeId) {
             return base.Channel.GetEmployeeDetails(employeeId);
         }
         
-        public System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails> GetEmployeeDetailsAsync(string employeeId) {
+        public System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails> GetEmployeeDetailsAsync(string employeeId) {
             return base.Channel.GetEmployeeDetailsAsync(employeeId);
         }
         
-        public UnitTestProject1.ServiceReference.EmployeeDetails[] GetAllEmployeeDetails() {
+        public EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[] GetAllEmployeeDetails() {
             return base.Channel.GetAllEmployeeDetails();
         }
         
-        public System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails[]> GetAllEmployeeDetailsAsync() {
+        public System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[]> GetAllEmployeeDetailsAsync() {
             return base.Channel.GetAllEmployeeDetailsAsync();
         }
         
-        public UnitTestProject1.ServiceReference.EmployeeDetails[] GetEmployeeDetailsByName(string name) {
+        public EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[] GetEmployeeDetailsByName(string name) {
             return base.Channel.GetEmployeeDetailsByName(name);
         }
         
-        public System.Threading.Tasks.Task<UnitTestProject1.ServiceReference.EmployeeDetails[]> GetEmployeeDetailsByNameAsync(string name) {
+        public System.Threading.Tasks.Task<EMSFixtures.EmployeeManagementServiceReference.EmployeeDetails[]> GetEmployeeDetailsByNameAsync(string name) {
             return base.Channel.GetEmployeeDetailsByNameAsync(name);
         }
     }

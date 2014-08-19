@@ -1,15 +1,16 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UnitTestProject1.ServiceReference;
 using System.Diagnostics;
 using System.ServiceModel;
 using System.Linq;
 using System.ServiceModel.Channels;
+using EMSFixtures.EmployeeManagementServiceReference;
 
-namespace UnitTestProject1
+
+namespace EMSFixtures
 {
     [TestClass]
-    public class UnitTest1
+    public class EmployeeManagementServiceFixtures
     {
         CreateEmployeeDetailsClient creator = new CreateEmployeeDetailsClient("BasicHttpBinding_ICreateEmployeeDetails");
         RetrieveEmployeeDeatilsClient retriever = new RetrieveEmployeeDeatilsClient("BasicHttpBinding_IRetrieveEmployeeDeatils");
@@ -225,5 +226,6 @@ namespace UnitTestProject1
         }
 
 
-    }
+    }    
 }
+
