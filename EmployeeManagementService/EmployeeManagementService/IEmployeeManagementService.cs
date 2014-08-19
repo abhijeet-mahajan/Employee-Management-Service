@@ -29,10 +29,10 @@ namespace EmployeeManagementService
         void AddEmployeeDetails(string employeeId, string name,string employeeEmailId);
 
         [OperationContract]
-        Boolean RemoveEmployeeDetails(string employeeId);
+        void RemoveEmployeeDetails(string employeeId);
 
         [OperationContract]
-        Boolean AddRemarkTOEmployee(string employeeId, string text);
+        void AddRemarkTOEmployee(string employeeId, string text);
     }
 
 

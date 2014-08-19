@@ -13,3 +13,8 @@ D:\Abhijeet\WCF Assignment\EmployeeManagementService\Employee-Management-Service
 D:\Abhijeet\WCF Assignment\EmployeeManagementService\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.csprojResolveAssemblyReference.cache
 D:\Abhijeet\WCF Assignment\EmployeeManagementService\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.dll
 D:\Abhijeet\WCF Assignment\EmployeeManagementService\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.pdb
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\bin\EmployeeManagementService.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\bin\EmployeeManagementService.pdb
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.csprojResolveAssemblyReference.cache
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.dll
+D:\Abhijeet\WCF Assignment\EMS\Employee-Management-Service\EmployeeManagementService\EmployeeManagementService\obj\Debug\EmployeeManagementService.pdb

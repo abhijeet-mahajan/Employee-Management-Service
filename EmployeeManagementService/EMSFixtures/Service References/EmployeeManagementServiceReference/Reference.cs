@@ -178,16 +178,16 @@ namespace EMSFixtures.EmployeeManagementServiceReference {
         System.Threading.Tasks.Task AddEmployeeDetailsAsync(string employeeId, string name, string employeeEmailId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICreateEmployeeDetails/RemoveEmployeeDetails", ReplyAction="http://tempuri.org/ICreateEmployeeDetails/RemoveEmployeeDetailsResponse")]
-        bool RemoveEmployeeDetails(string employeeId);
+        void RemoveEmployeeDetails(string employeeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICreateEmployeeDetails/RemoveEmployeeDetails", ReplyAction="http://tempuri.org/ICreateEmployeeDetails/RemoveEmployeeDetailsResponse")]
-        System.Threading.Tasks.Task<bool> RemoveEmployeeDetailsAsync(string employeeId);
+        System.Threading.Tasks.Task RemoveEmployeeDetailsAsync(string employeeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICreateEmployeeDetails/AddRemarkTOEmployee", ReplyAction="http://tempuri.org/ICreateEmployeeDetails/AddRemarkTOEmployeeResponse")]
-        bool AddRemarkTOEmployee(string employeeId, string text);
+        void AddRemarkTOEmployee(string employeeId, string text);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICreateEmployeeDetails/AddRemarkTOEmployee", ReplyAction="http://tempuri.org/ICreateEmployeeDetails/AddRemarkTOEmployeeResponse")]
-        System.Threading.Tasks.Task<bool> AddRemarkTOEmployeeAsync(string employeeId, string text);
+        System.Threading.Tasks.Task AddRemarkTOEmployeeAsync(string employeeId, string text);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -225,19 +225,19 @@ namespace EMSFixtures.EmployeeManagementServiceReference {
             return base.Channel.AddEmployeeDetailsAsync(employeeId, name, employeeEmailId);
         }
         
-        public bool RemoveEmployeeDetails(string employeeId) {
-            return base.Channel.RemoveEmployeeDetails(employeeId);
+        public void RemoveEmployeeDetails(string employeeId) {
+            base.Channel.RemoveEmployeeDetails(employeeId);
         }
         
-        public System.Threading.Tasks.Task<bool> RemoveEmployeeDetailsAsync(string employeeId) {
+        public System.Threading.Tasks.Task RemoveEmployeeDetailsAsync(string employeeId) {
             return base.Channel.RemoveEmployeeDetailsAsync(employeeId);
         }
         
-        public bool AddRemarkTOEmployee(string employeeId, string text) {
-            return base.Channel.AddRemarkTOEmployee(employeeId, text);
+        public void AddRemarkTOEmployee(string employeeId, string text) {
+            base.Channel.AddRemarkTOEmployee(employeeId, text);
         }
         
-        public System.Threading.Tasks.Task<bool> AddRemarkTOEmployeeAsync(string employeeId, string text) {
+        public System.Threading.Tasks.Task AddRemarkTOEmployeeAsync(string employeeId, string text) {
             return base.Channel.AddRemarkTOEmployeeAsync(employeeId, text);
         }
     }

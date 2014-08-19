@@ -24,9 +24,7 @@
   </xs:element>
   <xs:element name="RemoveEmployeeDetailsResponse">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="RemoveEmployeeDetailsResult" type="xs:boolean" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="AddRemarkTOEmployee">
@@ -39,9 +37,7 @@
   </xs:element>
   <xs:element name="AddRemarkTOEmployeeResponse">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="AddRemarkTOEmployeeResult" type="xs:boolean" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="GetEmployeeDetails">
