@@ -17,16 +17,13 @@ namespace EMSFixtures
         RetrieveEmployeeDeatilsClient retriever = new RetrieveEmployeeDeatilsClient("BasicHttpBinding_IRetrieveEmployeeDeatils");
 
         [TestMethod]
-        public void RemoveEmployeeDetails()
+        [ExpectedException(typeof(FaultException))]
+        public void AddEmptyEmployeeDetails()
         {
-            creator.RemoveEmployeeDetails("1");
-            creator.RemoveEmployeeDetails("2");
-            creator.RemoveEmployeeDetails("3");
-            creator.RemoveEmployeeDetails("4");
-            creator.RemoveEmployeeDetails("5");
+            creator.AddEmployeeDetails("","","");
 
             List<EmployeeDetails> employeeList = new List<EmployeeDetails>(retriever.GetAllEmployeeDetails());
-            Assert.IsTrue(!employeeList.Exists(employee => employee.Id == "1"));
+            Assert.IsTrue(employeeList.Any());
         }
 
         [TestMethod]
@@ -41,7 +38,7 @@ namespace EMSFixtures
             List<EmployeeDetails> employeeList = new List<EmployeeDetails>(retriever.GetAllEmployeeDetails());
             Assert.IsTrue(employeeList.Exists(employee => employee.Id == "1"));
         }
-
+        
         [TestMethod]
         [ExpectedException(typeof(FaultException))]
         public void AddAgainEmployeeDetails()
@@ -78,7 +75,6 @@ namespace EMSFixtures
             creator.AddRemarkTOEmployee("13", "achcha he..bahut achcha he!!!");
         }
 
-
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void RetrieveNonExistingEmployeeDetails()
@@ -101,7 +97,6 @@ namespace EMSFixtures
             Assert.IsTrue(employeeList.Exists(employee => employee.Id == "1"));
         }
 
-
         [TestMethod]
         public void RetrieveEmployeeByName()
         {
@@ -116,6 +111,19 @@ namespace EMSFixtures
             Assert.IsTrue(employeeList.Exists(employee => employee.Name == "Virat"));
         }
 
+        [TestMethod]
+        public void RemoveEmployeeDetails()
+        {
+            creator.RemoveEmployeeDetails("1");
+            creator.RemoveEmployeeDetails("2");
+            creator.RemoveEmployeeDetails("3");
+            creator.RemoveEmployeeDetails("4");
+            creator.RemoveEmployeeDetails("5");
+            creator.RemoveEmployeeDetails("11");
+
+            List<EmployeeDetails> employeeList = new List<EmployeeDetails>(retriever.GetAllEmployeeDetails());
+            Assert.IsTrue(!employeeList.Exists(employee => employee.Id == "1"));
+        }
 
     }
 }

@@ -11,7 +11,6 @@ namespace EmployeeManagementService
     [ServiceContract]
     public interface IRetrieveEmployeeDeatils
     {
-        /// change naming conventions of local variables
         [OperationContract]
         EmployeeDetails GetEmployeeDetails(string employeeId);
 

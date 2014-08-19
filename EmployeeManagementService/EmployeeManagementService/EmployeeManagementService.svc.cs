@@ -10,26 +10,26 @@ namespace EmployeeManagementService
 {
     public class EmployeeManagementService : IRetrieveEmployeeDeatils, ICreateEmployeeDetails
     {
-        static List<EmployeeDetails> EmployeeDetailsList = new List<EmployeeDetails>();
+        static List<EmployeeDetails> _employeeDetailsList = new List<EmployeeDetails>();
 
         public EmployeeDetails GetEmployeeDetails(string employeeId)
         {
-            return EmployeeDetailsList.Find(employee => employee.Id == employeeId); 
+            return _employeeDetailsList.Find(employee => employee.Id == employeeId); 
         }
 
         public List<EmployeeDetails> GetAllEmployeeDetails()
         {
-            return EmployeeDetailsList;
+            return _employeeDetailsList;
         }
 
         public List<EmployeeDetails> GetEmployeeDetailsByName(string name)
         {
-            return EmployeeDetailsList.FindAll(employee => employee.Name == name);
+            return _employeeDetailsList.FindAll(employee => employee.Name == name);
         }
 
         public void AddEmployeeDetails(string employeeId, string name, string employeeEmailId)
         {
-            if (EmployeeDetailsList.Exists(employee => employee.Id == employeeId))
+            if (_employeeDetailsList.Exists(employee => employee.Id == employeeId))
                 throw new FaultException(new FaultReason("Employee Id already exists"), new FaultCode("101"));
             else
             {
@@ -37,18 +37,18 @@ namespace EmployeeManagementService
                 employee.Id = employeeId;
                 employee.EmailId = employeeEmailId;
                 employee.Name = name;
-                EmployeeDetailsList.Add(employee);
+                _employeeDetailsList.Add(employee);
             }
         }
 
         public void AddRemarkTOEmployee(string employeeId, string text)
         {
-            if (EmployeeDetailsList.Exists(employee => employee.Id == employeeId))
+            if (_employeeDetailsList.Exists(employee => employee.Id == employeeId))
             {
                 Remark remark = new Remark();
                 remark.DateTime = DateTime.UtcNow;
                 remark.Text = text;
-                EmployeeDetailsList.Find(employee => employee.Id == employeeId).EmployeeRemark.Add(remark);
+                _employeeDetailsList.Find(employee => employee.Id == employeeId).EmployeeRemark.Add(remark);
             }
             else
                 throw new FaultException(new FaultReason("Employee Not Found"), new FaultCode("102"));
@@ -56,8 +56,8 @@ namespace EmployeeManagementService
 
         public void RemoveEmployeeDetails(string employeeId)
         {
-            if (EmployeeDetailsList.Exists(employee => employee.Id == employeeId))
-                EmployeeDetailsList.Remove(EmployeeDetailsList.Find(employee => employee.Id == employeeId));
+            if (_employeeDetailsList.Exists(employee => employee.Id == employeeId))
+                _employeeDetailsList.Remove(_employeeDetailsList.Find(employee => employee.Id == employeeId));
             else
                 throw new FaultException(new FaultReason("Employee Not Found"), new FaultCode("102"));
         }
